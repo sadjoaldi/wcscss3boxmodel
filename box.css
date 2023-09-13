@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  background: #a306b6;
+  height: 60px;
+  display: flex;
+}
+nav ul {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+nav li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+nav a {
+  color: white;
+  font-size: 1.25rem;
+  padding: 5px 0;
+}
+
+.active {
+  background: white;
+  color: #a306b6;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.hoveff:hover {
+  background: white;
+  color: #a306b6;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+nav:hover .active:not(:hover) {
+  background: none;
+  color: white;
+}
+
+h1 {
+  margin: 70px auto;
+  width: 70%;
+  font-size: 2.7rem;
+  background: #e1d6d6;
+  border-radius: 15px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+}
+h2 {
+  margin: 25px 0;
+  font-size: 1.85rem;
+  text-align: left;
+}
+
+.input-box {
+  display: grid;
+}
+label {
+  text-align: left;
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #464545;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background: #e1d6d6a6;
+  transition: 0.2s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border: 1px solid rgb(135, 235, 193);
+}
+textarea {
+  resize: none;
+  height: 170px;
+}
+button {
+  background: #a306b6;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 7px;
+  margin: 15px 0;
+  display: flex;
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+footer {
+  display: flex;
+  color: white;
+  background: #9e9e9e;
+  margin-top: 15px;
+  padding: 13px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
